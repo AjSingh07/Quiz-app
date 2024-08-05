@@ -1,101 +1,232 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-body{
-    background-color: rgb(63, 76, 76);
-    background-image: linear-gradient(203deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(112.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(67.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(248deg, rgb(24, 15, 143),rgb(170, 57, 157)); background-blend-mode:overlay,overlay,overlay,normal;
-    height: 100vh;
-    width: 100vw;
-  
+body {
+  /* background-color: rgb(63, 76, 76); */
+  background-image: linear-gradient(
+      203deg,
+      rgb(73, 160, 30) 0%,
+      rgb(73, 160, 30) 6%,
+      rgb(88, 141, 55) 6%,
+      rgb(88, 141, 55) 11%,
+      rgb(103, 122, 81) 11%,
+      rgb(103, 122, 81) 55%,
+      rgb(118, 103, 106) 55%,
+      rgb(118, 103, 106) 81%,
+      rgb(132, 84, 131) 81%,
+      rgb(132, 84, 131) 83%,
+      rgb(147, 65, 156) 83%,
+      rgb(147, 65, 156) 92%,
+      rgb(162, 46, 182) 92%,
+      rgb(162, 46, 182) 95%,
+      rgb(177, 27, 207) 95%,
+      rgb(177, 27, 207) 100%
+    ),
+    linear-gradient(
+      112.5deg,
+      rgb(73, 160, 30) 0%,
+      rgb(73, 160, 30) 6%,
+      rgb(88, 141, 55) 6%,
+      rgb(88, 141, 55) 11%,
+      rgb(103, 122, 81) 11%,
+      rgb(103, 122, 81) 55%,
+      rgb(118, 103, 106) 55%,
+      rgb(118, 103, 106) 81%,
+      rgb(132, 84, 131) 81%,
+      rgb(132, 84, 131) 83%,
+      rgb(147, 65, 156) 83%,
+      rgb(147, 65, 156) 92%,
+      rgb(162, 46, 182) 92%,
+      rgb(162, 46, 182) 95%,
+      rgb(177, 27, 207) 95%,
+      rgb(177, 27, 207) 100%
+    ),
+    linear-gradient(
+      67.5deg,
+      rgb(73, 160, 30) 0%,
+      rgb(73, 160, 30) 6%,
+      rgb(88, 141, 55) 6%,
+      rgb(88, 141, 55) 11%,
+      rgb(103, 122, 81) 11%,
+      rgb(103, 122, 81) 55%,
+      rgb(118, 103, 106) 55%,
+      rgb(118, 103, 106) 81%,
+      rgb(132, 84, 131) 81%,
+      rgb(132, 84, 131) 83%,
+      rgb(147, 65, 156) 83%,
+      rgb(147, 65, 156) 92%,
+      rgb(162, 46, 182) 92%,
+      rgb(162, 46, 182) 95%,
+      rgb(177, 27, 207) 95%,
+      rgb(177, 27, 207) 100%
+    ),
+    linear-gradient(248deg, rgb(24, 15, 143), rgb(170, 57, 157));
+  background-blend-mode: overlay, overlay, overlay, normal;
+  height: 100vh;
+  width: 100vw;
 }
-.anchor{
-    padding-top: 3rem;
-    display: block;
-    height: 50vh;
+
+header {
+  position: fixed;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  width: 100vw;
+  text-align: center;
+  margin-top: 20px;
+  color: chartreuse;
+  text-shadow: 2px 2px 5px rgb(116, 110, 110);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-header{
-    position: fixed;
-    font-size: clamp(1.5rem,4vw,2.5rem);
-    width: 100vw;
-    text-align: center;
-    margin-top: 20px;
-    color: chartreuse;
-    text-shadow: 2px 2px 5px rgb(116, 110, 110);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.anchor {
+    text-decoration: none;
+}
+.start-quiz{
+  position: relative;
+  /* width: 70vh; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #edc3c3;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.start-quiz h2 {
+  padding: 50px;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #410505;
+}
+.start-quiz a {
+  padding: 50px;
+}
+
+.Quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  height: 100vh;
+}
+.button-73 {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
 }
 .main{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
-    height: 100vh;
+    height: 100%;
 }
-.container{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   backdrop-filter: blur(30px);
-  box-shadow:inset 0px 1px 8px 1px rgb(14, 14, 15);
-   border-radius: 15px;
+  box-shadow: inset 0px 1px 8px 1px rgb(14, 14, 15);
+  border-radius: 15px;
   width: 70%;
-    padding: 20px;
-    
+  padding: 20px;
 }
-#quesBox{
-    margin-bottom: 10px;
+#quesBox {
+  margin-bottom: 10px;
 }
-.col{
-    padding: 20px;
+.col {
+  padding: 20px;
+  color: rgb(146, 195, 195);
 }
-.col h2{
-    font-family:cursive;
+.col h2 {
+    font-family: cursive;
+    color: aqua;
 }
-.box{
-    font-size: larger;
+.box {
+  font-size: larger;
 }
-.btn{
-    text-align: center;
+.btn {
+  text-align: center;
 }
 .button-72 {
-    background-color: initial;
-    background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
-    border-radius: 42px;
-    border-width: 0;
-    box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: Quicksand,sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: .04em;
-    line-height: 16px;
-    margin: 0;
-    padding: 18px 18px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
+  background-color: initial;
+  background-image: linear-gradient(
+    rgba(179, 132, 201, 0.84),
+    rgba(57, 31, 91, 0.84) 50%
+  );
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Quicksand, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.button-72:hover {
+  background-image: linear-gradient(#b384c9, #391f5b 50%);
+}
+
+@media (min-width: 768px) {
+  .button-72 {
+    font-size: 21px;
+    padding: 18px 34px;
   }
-  
-  .button-72:hover {
-    background-image: linear-gradient(#B384C9, #391F5B 50%);
-  }
-  
-  @media (min-width: 768px) {
-    .button-72 {
-      font-size: 21px;
-      padding: 18px 34px;
-    }
-  }
-#submit{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    font-size: large;
-    background-color: rgb(147, 195, 197);
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+}
+#submit {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: large;
+  background-color: rgb(147, 195, 197);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
